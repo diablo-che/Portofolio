@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#about" data-offset="80">About</a></li>
+          <li class="nav-item">
+            <a href="#skill" data-offset="80">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" data-offset="80">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <br /><br /><br />
+      <header class="header">
+        <div class="img1">
+          <img src="image/profil.jpg" alt="Cheka" />
+        </div>
+        <h1 class="title">Muhammad Zahran Cheka Wafa</h1>
+      </header>
+
+      <br /><br /><br />
+      <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-content">
+          Saya adalah seorang mahasiswa teknik Informatika semester 3 yang
+          memiliki keinginan untuk belajar dan mampu beradaptasi dengan
+          baik.Saya menyukai hal yang baru dan ingin berkembang.
+        </p>
+      </section>
+
+      <br /><br /><br />
+      <section id="skill" class="skill">
+        <h2 class="section-title">Skill & Project</h2>
+        <div class="container">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="image/python.jpg" alt="Python" />
+              </div>
+              <div class="card-back">
+                <img src="image/projectpy.png" alt="project python" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="image/html.png" alt="HTML" />
+              </div>
+              <div class="card-back">
+                <img src="image/prohtml.png" alt="project html" />
+                <a
+                  href="https://diablo-che.github.io/Search/"
+                  class="read-more-button"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="image/css.png" alt="css" />
+              </div>
+              <div class="card-back">
+                <img src="image/prhtml.png" alt="project html" />
+                <a
+                  href="https://diablo-che.github.io/login/"
+                  class="read-more-button"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-front">
+              <img src="image/java script.jpg" alt="js" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br /><br /><br />
+      <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <input
+              type="hidden"
+              name="access_key"
+              value="e33e2204-8286-471e-8258-55d176b66b57"
+            />
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-input"
+              rows="4"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </section>
+      <footer class="footer">
+        <p class="footer-text">&copy; 2024 Muhammad Cheka</p>
+      </footer>
+      <button class="back-to-top" onclick="scrollToTop()">^</button>
+    </div>
+  </body>
+</html>
